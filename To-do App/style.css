@@ -1,0 +1,142 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background: linear-gradient(#fe3197, #ebece6);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  background-color: #fe3197;
+  padding: 20px;
+  border-radius: 12px;
+  width: 500px;
+  max-width: 700px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  
+  
+}
+
+/* Heading */
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  gap: 5px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+}
+
+.input-container button {
+  background-color: #e856c1;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.input-container button:hover {
+  background-color: #dda5ce;
+}
+
+/* Task List */
+#taskList {
+  list-style: none;
+  margin-top: 20px;
+ 
+}
+
+#taskList li {
+  background-color: #ffffff;
+  color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+#taskList li:hover {
+  transform: scale(1.02);
+}
+
+#taskList li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Remove Button */
+.remove-btn {
+  background: #e856c1;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* Clear All Button */
+#clearBtn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #b64c40; /* Bright red like Mario's cap */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Press Start 2P", system-ui;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#clearBtn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  transform: scale(1.03);
+}
+
+#clearBtn:active {
+  transform: scale(0.98);
+}
+
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container {
+    padding: 15px;
+  }
+  .input-container input,
+  .input-container button {
+    font-size: 0.9rem;
+  }
+}
