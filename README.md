@@ -11,3 +11,5 @@ A simple and efficient To-Do list application designed using **HTML**, **CSS**, 
 5. Smooth hover and click animations  
 6. Responsive design for mobile and desktop
 
+![Screenshot of Let’s Do It](screenshot2.png)
+![Screenshot of Let’s Do It](screenshot1.png)
